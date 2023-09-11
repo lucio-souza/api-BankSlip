@@ -51,3 +51,11 @@ WHERE id=5;
 /*selecionando a tabela para mostrar suas alterações*/
 SELECT * 
 FROM banklist;
+
+/*deletando uma coluna da tabela*/
+DELETE FROM banklist
+WHERE id=4;
+
+/*selecionando a tabela para mostrar suas alterações*/
+SELECT * 
+FROM banklist;
