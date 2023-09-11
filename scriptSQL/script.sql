@@ -38,3 +38,16 @@ WHERE id=4;
 SELECT * 
 FROM banklist
 WHERE id=1;
+
+/*atualizando dados da coluna status da tabela*/
+UPDATE banklist
+SET status='payd'
+WHERE id=3;
+
+UPDATE banklist
+SET status='vencid'
+WHERE id=5;
+
+/*selecionando a tabela para mostrar suas alterações*/
+SELECT * 
+FROM banklist;
