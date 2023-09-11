@@ -22,3 +22,19 @@ CREATE DATABASE
 (DEFAULT,'2023-10-02',NULL,'10000','anderson santos','pending'),
 (DEFAULT,'2023-07-28',NULL,'2000','bruno filho','pending');
 
+/*selecionando toda a tabela*/
+SELECT * 
+FROM banklist;
+
+/*selecionando a tabela com ids especificos*/
+SELECT * 
+FROM banklist
+WHERE id=2;
+
+SELECT * 
+FROM banklist
+WHERE id=4;
+
+SELECT * 
+FROM banklist
+WHERE id=1;
