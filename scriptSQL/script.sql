@@ -1,10 +1,10 @@
 /*criação do banco de dados*/
 CREATE DATABASE
  BANKLIST;
- USE BANKLIST;
+ USE BANKSLIP;
 
 /*criação da tabela banklist*/
- CREATE TABLE banklist(
+ CREATE TABLE bankslip(
     id serial NOT NULL PRIMARY KEY,
     due_date DATE NOT NULL,
     payment_date DATE,
@@ -14,7 +14,7 @@ CREATE DATABASE
  );
 
  /*inserção de dados na tabela banklist*/
- INSERT INTO banklist
+ INSERT INTO bankslip
  VALUES
 (DEFAULT,'2023-09-14',NULL,'5000','andre silva','pending'),
 (DEFAULT,'2023-05-29',NULL,'20000','joao barros','pending'),
@@ -24,38 +24,38 @@ CREATE DATABASE
 
 /*selecionando toda a tabela*/
 SELECT * 
-FROM banklist;
+FROM bankslip;
 
 /*selecionando a tabela com ids especificos*/
 SELECT * 
-FROM banklist
+FROM bankslip
 WHERE id=2;
 
 SELECT * 
-FROM banklist
+FROM bankslip
 WHERE id=4;
 
 SELECT * 
-FROM banklist
+FROM bankslip
 WHERE id=1;
 
 /*atualizando dados da coluna status da tabela*/
-UPDATE banklist
+UPDATE bankslip
 SET status='payd'
 WHERE id=3;
 
-UPDATE banklist
+UPDATE bankslip
 SET status='vencid'
 WHERE id=5;
 
 /*selecionando a tabela para mostrar suas alterações*/
 SELECT * 
-FROM banklist;
+FROM bankslip;
 
 /*deletando uma coluna da tabela*/
-DELETE FROM banklist
+DELETE FROM bankslip
 WHERE id=4;
 
 /*selecionando a tabela para mostrar suas alterações*/
 SELECT * 
-FROM banklist;
+FROM bankslip;
