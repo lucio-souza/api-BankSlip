@@ -1,8 +1,9 @@
-const express=require("express");
+require('dotenv').config();
+const express=require('express');
 const app=express();
 
-app.get("/",function(req,res){
-    res.send("Está funcionando");
+app.get('/',function(req,res){
+	res.send('esta funcionando');
 });
 
-app.listen(8080);
+app.listen(process.env.port);
