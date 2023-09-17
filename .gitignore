@@ -1,0 +1,8 @@
+#arquivos com dados sensiveis 
+.env
+
+#diretorios de saída da IDE
+.vscode
+
+#Node.js/npm
+node_modules/
