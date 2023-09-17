@@ -1,5 +1,0 @@
-db_host=nome do host do banco de dados
-db_pass=senha do banco de dados
-db_user=nome do ususario do banco
-db_database=nome do banco de dados
-port=porta servidor
