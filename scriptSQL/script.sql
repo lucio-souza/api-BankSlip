@@ -1,6 +1,6 @@
 /*criação do banco de dados*/
 CREATE DATABASE
- BANKLIST;
+ BANKSLIP;
  USE BANKSLIP;
 
 /*criação da tabela banklist*/
